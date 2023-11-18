@@ -17,3 +17,7 @@ app.use("/api/v1/",blog);
 app.listen(PORT,() => {
     console.log(`Server is listening on ${PORT}`);
 })
+
+app.get("/",(req,res) =>{
+    res.send({message:"Welcome to Blogs API"});
+})
